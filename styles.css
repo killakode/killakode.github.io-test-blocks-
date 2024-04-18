@@ -11940,8 +11940,6 @@ h3, .h3 {
 }
 
 .logo {
-  background: url(img/dog.jpeg) no-repeat;
-  background-size: cover;
   height: 100px;
   width: 100px;
   margin-right: 50px;
@@ -11972,12 +11970,14 @@ h3, .h3 {
 }
 
 .image__block {
-  text-align: center;
   display: flex;
-  align-items: center;
   height: 150px;
-  background: url(img/mops.jpeg) no-repeat;
-  background-size: cover;
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .text__block {
