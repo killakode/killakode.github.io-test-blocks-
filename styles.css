@@ -136,7 +136,7 @@ h3{
 }
 
 .image__block{
-	padding:  0 100px;
+	text-align: center;
 	display: flex;
 	align-items: center;
 	height: 150px;
