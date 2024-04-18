@@ -1,0 +1,168 @@
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+
+h1 {
+	font-size: 37px;
+	margin-bottom: 39px;
+}
+
+h2 {
+	font-size: 30px;
+	margin-bottom: 40px;
+}
+
+h3{
+	font-size: 24px;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	padding: 0 10%;
+	margin-bottom: 104px;
+}
+
+.top__container {
+	padding: 108px 10% 0px 10%;
+}
+
+
+.container__block{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.wrap__container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+
+.first__floor__block {
+	background-color: #707bb2;
+    height: 240px;
+}
+
+.second__floor__block {
+	background-color: #707bb2;
+    height: 240px;
+}
+
+.grid__container{
+	display: grid;
+	grid-template-areas: 
+				"a a b b"
+				"c c b b"
+				"d d d e";
+	grid-gap: 30px;
+	grid-template-rows: 150px 150px 100px;
+}
+
+.grid__block__first {
+	grid-area: a;
+	background-color: #707bb2;
+	padding: 10px;
+}
+
+.grid__block__second {
+	grid-area: b;
+	background-color: #707bb2;
+	padding: 10px;
+}
+
+.grid__block__third{
+	grid-area: c;
+	background-color: #707bb2;
+	padding: 10px;
+}
+
+.grid__block__fourth{
+	grid-area: d;
+	background-color: #707bb2;
+	padding: 10px;
+}
+
+.grid__block__fifth {
+	grid-area: e;
+	background-color: #707bb2;
+	padding: 10px;
+}
+
+
+.content__header{
+	margin-bottom: 20px;
+}
+
+.content__block__long{
+	padding: 20px;
+	background-color: #eceef7;
+	height: 200px;
+	display: flex;
+	align-items: center;
+}
+
+.logo{
+	background: url(img/dog.jpeg) no-repeat;
+	background-size: cover;
+	height: 100px;
+	width: 100px;
+	margin-right: 50px;
+}
+
+.content__info{
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.button{
+	background-color: #364ec3;
+	padding: 5px 30px;
+	color: white;
+}
+
+.content__container{
+	gap: 40px;
+	display: flex;
+	flex-direction: row;
+}
+
+.content__block {
+	display: flex;
+	flex-direction: column;
+	width: calc(50% - 20px);
+}
+
+.image__block{
+	text-align: center;
+	display: flex;
+	align-items: center;
+	height: 150px;
+	background:url(img/mops.jpeg) no-repeat;
+	background-size: cover;
+}
+
+.text__block{
+	padding: 25px;
+	background-color: #dedede;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+}
+
+.description{
+	overflow: hidden; 
+    display: -webkit-box; 
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical; 
+    text-overflow: ellipsis; 
+    white-space: normal; 
+
+}
+
+.content__button{
+	margin-top:auto;
+}
+
+
