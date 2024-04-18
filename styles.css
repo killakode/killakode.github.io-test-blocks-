@@ -26,7 +26,7 @@ h3{
 
 .container__block{
 	display: flex;
-	gap: 41px;
+	gap: 42px;
 }
 
 .wrap__container{
@@ -39,7 +39,7 @@ h3{
 
 .first__floor__block {
 	background-color: #707bb2;
-    width: calc(33.3% - 78px / 3);
+    width: calc(33.3% - 14px);
     height: 240px;
 }
 
