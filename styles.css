@@ -11911,9 +11911,16 @@ h3, .h3 {
 }
 
 .card__logo {
+  border-radius: 50%;
   height: 100px;
   width: 100px;
   margin-right: 50px;
+  overflow: hidden;
+}
+
+.logo__image {
+  height: auto;
+  display: block;
 }
 
 .card__info {
