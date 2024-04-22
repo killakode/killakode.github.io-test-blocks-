@@ -11968,6 +11968,8 @@ h3, .h3 {
 }
 .content_block_2_flex_block_image {
   object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 .content_block_2_flex_block_wrapper {
   padding: 10px 20px;
@@ -11999,6 +12001,8 @@ h3, .h3 {
 }
 .bootstrap_container_block_image {
   object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 .bootstrap_container_block_wrapper {
   padding: 10px 20px;
