@@ -11988,6 +11988,7 @@ h3, .h3 {
 }
 .content_block_2_flex_button {
   margin-top: auto;
+  flex: none;
 }
 
 .bootstrap_container_block {
@@ -12013,6 +12014,7 @@ h3, .h3 {
 }
 .bootstrap_container_block_button {
   margin-top: auto;
+  flex: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
