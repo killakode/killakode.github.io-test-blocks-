@@ -11919,7 +11919,7 @@ textarea.form-control-lg {
   align-items: center;
 }
 .card_event3_logo_block {
-  border-radius: 50%;
+  border-radius: 100%;
   height: 100px;
   width: 100px;
   margin-right: 50px;
@@ -11930,6 +11930,7 @@ textarea.form-control-lg {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  object-position: center bottom;
 }
 .card_event3_wrapper {
   margin-right: 10px;
