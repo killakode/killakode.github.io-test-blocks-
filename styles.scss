@@ -1,18 +1,20 @@
 @import "./node_modules/bootstrap/scss/bootstrap";
 
 
-h1 {
-	font-size: 37px;
-	margin-bottom: 39px;
-}
-
-h2 {
-	font-size: 30px;
+.content_title{
+	font-size: 24px;
 	margin-bottom: 40px;
 }
 
-h3{
-	font-size: 24px;
+
+.content_block_1,
+.content_block_2,
+.content_block_3,
+.content_block_4,
+.content_block_5,
+.content_block_6,
+.content_block_7 {
+	margin-bottom: 100px;
 }
 
 
@@ -21,30 +23,31 @@ h3{
     height: 240px;
 }
 
-.three_blocks_flex{
-	&_wrapper{
-		display: flex;
-		flex-wrap: wrap;
-		gap: 42px;
-	}
+.сard_event1{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+
 	&_block{
-		width: calc(100%/3 - 84px/3);
+		width: calc(100%/3 - 48px/3);
 	}
 
-	@media screen and (max-width: 991px) {
+	@media (max-width: 991px) {
 		&_block{
-			width: calc(100%/2 - 42px/2);
+			width: calc(100%/2 - 12px);
 		}
 	}
 
-	@media screen and (max-width: 767px) {
+	@media (max-width: 767px) {
 		&_block{
 			width: 100%;
 		}
 	}
 }
 
-.group_blocks_grid{
+
+
+.card_event2{
 	display: grid;
 	grid-template-areas: 
 				"a a b b"
@@ -53,165 +56,145 @@ h3{
 	grid-gap: 30px;
 	grid-template-rows: 150px 150px 100px;
 
-	.group_blocks_grid_block_1 {
+	.card_event2_block1 {
 		grid-area: a;
 	}
 
-	.group_blocks_grid_block_2 {
+	.card_event2_block2 {
 		grid-area: b;
 	}
 
-	.group_blocks_grid_block_3{
+	.card_event2_block3{
 		grid-area: c;
 	}
 
-	.group_blocks_grid_block_4{
+	.card_event2_block4{
 		grid-area: d;
 	}
 
-	.group_blocks_grid_block_5{
+	.card_event2_block5{
 		grid-area: e;
 	}
 
-	.group_blocks_grid_block_1,
-	.group_blocks_grid_block_2,
-	.group_blocks_grid_block_3,
-	.group_blocks_grid_block_4,
-	.group_blocks_grid_block_5{
+	.card_event2_block1,
+	.card_event2_block2,
+	.card_event2_block3,
+	.card_event2_block4,
+	.card_event2_block5	{
 		background-color: #707bb2;
 	}
 }
 
-.content_block_1_wrapper{
+.card_event3{
 	padding: 20px;
 	background-color: #eceef7;
 	display: flex;
 	align-items: center;
 
 
-	&_logo{
+	&_logo_block{
 		border-radius: 50%;
 		height: 100px;
 		width: 100px;
 		margin-right: 50px;
 		overflow: hidden;
+		flex: none;
 	}
 
-	&_logo_image {
-		object-fit: cover;
+	&_logo_img{
 		height: 100%;
 		width: 100%;
+		object-fit: cover;
 	}
 
-	&_info{
-		display: flex;
-		flex-direction: column;
+	&_wrapper{
+		margin-right: 10px;
 	}
 
-	&_button{
-		flex: none;
+	&_btn{
 		margin-left: auto;
+		flex: none;
 	}
 
-	@media screen and (max-width: 767px) {
+	@media (max-width: 767px) {
 		flex-direction: column;
 
-		&_logo{
+		&_wrapper{
+			text-align: center;
+			margin-right: 0;
+		}
+
+		&_logo_block{
 			margin-right: 0;
 			margin-bottom: 20px;
 		}
 
-		&_info{
-			margin-bottom: 20px;
-		}
-
-		&_button{
+		&_btn{
 			margin-left: 0;
 		}
 	}
 }
 
-.content_block_2_flex{
+
+
+.content_block_6_flex{
 	display: flex;
+	flex-direction: row;
 	gap: 20px;
 
 
-	&_block{
-		display: flex;
-		flex-direction: column;
+	.card_event4{
 		width: calc(50% - 10px);
-		overflow: hidden;
+	}
+}
+
+.card_event4{
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	flex: 1;
+
+
+	&_image_block{
+		height: 200px;
+
 	}
 
-	&_block_image_block{
-		background-position: center bottom;
-	}
-
-	&_block_image{
+	&_img{
 		object-fit: cover;
 		height: 100%;
 		width: 100%;
+		object-position: center top;
 	}
 
-	&_block_wrapper{
+	&_wrapper{
 		padding: 10px 20px;
 		background-color: #dedede;
-		flex: 1;
 		display: flex;
 		flex-direction: column;
+		flex: 1 1 auto;
 	}
 
-	&_block_wrapper_text {
+	&_wrapper_text {
 		overflow: hidden;
 		display: -webkit-box;
 		-webkit-line-clamp: 3;
 		-webkit-box-orient: vertical;
 		text-overflow: ellipsis;
 		white-space: normal;
+		margin-bottom: 20px;
 	}
 
-	&_button{
-		margin-top: auto;
-		flex: none;
-	}
-}
-
-.bootstrap_container{
-
-	&_block{
-		display: flex;
-		flex-direction: column;
-		overflow: hidden;
-		height: 100%;
-	}
-
-	&_block_image_block{
-		background-position: center bottom;
-	}
-
-	&_block_image{
-		object-fit: cover;
-		height: 100%;
-		width: 100%;
-	}
-
-	&_block_wrapper{
-		padding: 10px 20px;
-		background-color: #dedede;
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-	}
-
-	&_block_wrapper_text {
-
-	}
-
-	&_block_button{
+	&_btn{
 		margin-top: auto;
 		flex: none;
 	}
 }
 
 
+.content_block_7{
+	.card_event4{
+		height: 100%;
+	}
+}
 
